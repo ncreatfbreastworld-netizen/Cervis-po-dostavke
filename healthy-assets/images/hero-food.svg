@@ -1,0 +1,37 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  
+  <circle cx="250" cy="200" r="180" fill="url(#heroGrad)"/>
+  
+  <!-- Plate -->
+  <ellipse cx="250" cy="220" rx="120" ry="20" fill="#e5e7eb"/>
+  <circle cx="250" cy="200" r="120" fill="white" stroke="#10b981" stroke-width="4"/>
+  
+  <!-- Food items -->
+  <circle cx="220" cy="180" r="25" fill="#ef4444"/>
+  <circle cx="280" cy="180" r="25" fill="#f59e0b"/>
+  <circle cx="250" cy="220" r="25" fill="#10b981"/>
+  
+  <path d="M210 210 Q220 200 230 210" fill="#059669"/>
+  <path d="M270 210 Q280 200 290 210" fill="#059669"/>
+  
+  <!-- Fork -->
+  <rect x="140" y="150" width="6" height="80" rx="3" fill="#6b7280"/>
+  <rect x="128" y="140" width="6" height="20" rx="3" fill="#6b7280"/>
+  <rect x="140" y="140" width="6" height="20" rx="3" fill="#6b7280"/>
+  <rect x="152" y="140" width="6" height="20" rx="3" fill="#6b7280"/>
+  
+  <!-- Knife -->
+  <rect x="354" y="150" width="6" height="80" rx="3" fill="#6b7280"/>
+  <path d="M340 140 L360 140 L360 160 L340 155 Z" fill="#9ca3af"/>
+  
+  <!-- Floating veggies -->
+  <circle cx="80" cy="100" r="20" fill="#22c55e" opacity="0.6"/>
+  <circle cx="420" cy="280" r="25" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="100" cy="300" r="18" fill="#ef4444" opacity="0.6"/>
+</svg>

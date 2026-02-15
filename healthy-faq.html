@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | HealthyFood</title>
+    <link rel="icon" type="image/svg+xml" href="healthy-assets/icons/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { 'primary': '#4caf50', 'secondary': '#059669' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+        }
+    </script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="healthy-index.html" class="flex items-center space-x-2">
+                <img src="healthy-assets/icons/logo.svg" alt="HealthyFood" class="h-10 w-10">
+                <span class="text-2xl font-bold text-primary">HealthyFood</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="healthy-index.html" class="text-gray-700 hover:text-primary transition">Главная</a>
+                <a href="healthy-contacts.html" class="text-gray-700 hover:text-primary transition">Контакты</a>
+                <a href="healthy-faq.html" class="text-gray-700 hover:text-primary font-semibold transition">FAQ</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-16 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-black text-gray-900 mb-4">Часто задаваемые вопросы</h1>
+            <p class="text-xl text-gray-600">Ответы на популярные вопросы о нашем сервисе</p>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="space-y-4">
+                <div class="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary transition">
+                    <button onclick="toggleFAQ(this)" class="w-full p-6 text-left flex justify-between items-center font-semibold text-lg hover:bg-green-50 transition">
+                        <span>Как работает доставка?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-600">Доставка осуществляется ежедневно с 6:00 до 22:00. Вы выбираете удобное время, и курьер привозит свежие блюда прямо к вашей двери в термосумке.</div>
+                    </div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary transition">
+                    <button onclick="toggleFAQ(this)" class="w-full p-6 text-left flex justify-between items-center font-semibold text-lg hover:bg-green-50 transition">
+                        <span>Сколько стоит?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-600">Стоимость зависит от выбранного рациона: от 1500₽/день за базовый план до 2500₽/день за премиум. При подписке на месяц - скидка 15%.</div>
+                    </div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary transition">
+                    <button onclick="toggleFAQ(this)" class="w-full p-6 text-left flex justify-between items-center font-semibold text-lg hover:bg-green-50 transition">
+                        <span>Можно ли вернуть деньги?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-600">Да, если вам не понравится наше питание в первые 3 дня, мы вернём деньги за неиспользованные дни подписки.</div>
+                    </div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary transition">
+                    <button onclick="toggleFAQ(this)" class="w-full p-6 text-left flex justify-between items-center font-semibold text-lg hover:bg-green-50 transition">
+                        <span>Учитываете ли вы аллергии?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-600">Конечно! При заказе укажите ваши аллергии, и мы составим индивидуальное меню без аллергенов. У нас есть безглютеновые, безлактозные и веганские варианты.</div>
+                    </div>
+                </div>
+                
+                <div class="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-primary transition">
+                    <button onclick="toggleFAQ(this)" class="w-full p-6 text-left flex justify-between items-center font-semibold text-lg hover:bg-green-50 transition">
+                        <span>Как долго хранятся блюда?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="p-6 pt-0 text-gray-600">Блюда готовятся утром в день доставки. В холодильнике хранятся до 48 часов. Каждый контейнер имеет дату приготовления и срок годности.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-4">Не нашли ответ?</h2>
+            <p class="text-xl mb-6">Напишите нам, и мы ответим на любые вопросы!</p>
+            <a href="healthy-contacts.html" class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition inline-block">Связаться</a>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2025 HealthyFood. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function toggleFAQ(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+            
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = '0');
+            document.querySelectorAll('.fa-chevron-down').forEach(i => i.style.transform = 'rotate(0deg)');
+            
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>

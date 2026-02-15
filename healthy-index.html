@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HealthyFood - доставка здорового питания на каждый день">
+    <title>HealthyFood | Доставка здорового питания</title>
+    
+    <link rel="icon" type="image/svg+xml" href="healthy-assets/icons/favicon.svg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4caf50',
+                        'secondary': '#059669',
+                        'accent': '#34d399',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    
+    *\ Navigation
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="healthy-index.html" class="flex items-center space-x-2">
+                    <img src="healthy-assets/icons/logo.svg" alt="HealthyFood" class="h-10 w-10">
+                    <span class="text-2xl font-bold text-primary">HealthyFood</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="healthy-index.html" class="text-gray-700 hover:text-primary font-semibold transition">Главная</a>
+                    <a href="#team" class="text-gray-700 hover:text-primary transition">О нас</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">Компания</a>
+                    <a href="healthy-contacts.html" class="text-gray-700 hover:text-primary transition">Контакты</a>
+                    <a href="healthy-faq.html" class="text-gray-700 hover:text-primary transition">FAQ</a>
+                    <a href="#order" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary transition">
+                        Заказать
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="healthy-index.html" class="block py-2 text-gray-700 hover:text-primary font-semibold">Главная</a>
+                <a href="#team" class="block py-2 text-gray-700 hover:text-primary">О нас</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-primary">Компания</a>
+                <a href="healthy-contacts.html" class="block py-2 text-gray-700 hover:text-primary">Контакты</a>
+                <a href="healthy-faq.html" class="block py-2 text-gray-700 hover:text-primary">FAQ</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-20 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 space-y-6">
+                    <h1 class="text-5xl md:text-6xl font-black text-gray-900 leading-tight">
+                        Здоровое питание <span class="text-primary">с доставкой</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Ежедневные рационы от шеф-повара и нутрициолога. 
+                        Без сахара, глютена и консервантов. Доставим в удобное время.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#order" class="bg-primary text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-secondary transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Заказать пробный день
+                        </a>
+                        <a href="#team" class="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary hover:text-white transition">
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="healthy-assets/images/hero-food.svg" alt="Здоровое питание" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Начальная секция -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-5xl font-black text-primary mb-2">5000+</p>
+                    <p class="text-gray-600 font-medium">Довольных клиентов</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-black text-primary mb-2">100+</p>
+                    <p class="text-gray-600 font-medium">Блюд в меню</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-black text-primary mb-2">7 дней</p>
+                    <p class="text-gray-600 font-medium">В неделю доставляем</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-black text-primary mb-2">100%</p>
+                    <p class="text-gray-600 font-medium">Натуральные продукты</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="team" class="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">Наша команда</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Профессионалы своего дела, которые заботятся о вашем здоровье и создают вкусные блюда
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Номер 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="aspect-square bg-gradient-to-br from-green-200 to-emerald-300 flex items-center justify-center">
+                        <i class="fas fa-user-chef text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Анна Кулинарова</h3>
+                        <p class="text-primary font-semibold mb-3">Шеф-повар</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            15+ лет опыта в ресторанах Michelin. Эксперт по здоровому питанию.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Номер 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="aspect-square bg-gradient-to-br from-blue-200 to-cyan-300 flex items-center justify-center">
+                        <i class="fas fa-user-doctor text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Елена Здоровая</h3>
+                        <p class="text-primary font-semibold mb-3">Нутрициолог</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Сертифицированный специалист. Разрабатывает индивидуальные рационы.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Номер 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="aspect-square bg-gradient-to-br from-purple-200 to-pink-300 flex items-center justify-center">
+                        <i class="fas fa-truck text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Дмитрий Быстров</h3>
+                        <p class="text-primary font-semibold mb-3">Логист</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Организует доставку в любую точку города точно в срок.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Номер 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="aspect-square bg-gradient-to-br from-orange-200 to-red-300 flex items-center justify-center">
+                        <i class="fas fa-headset text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Мария Поддержка</h3>
+                        <p class="text-primary font-semibold mb-3">Поддержка</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Всегда на связи, поможет с выбором рациона и ответит на вопросы.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Информация о сайте -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="healthy-assets/images/about-company.svg" alt="О компании" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900">О компании HealthyFood</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Мы создали HealthyFood, чтобы здоровое питание стало доступным каждому. 
+                        Наша миссия — помочь людям заботиться о себе, экономя время на готовке.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Каждое блюдо разрабатывается нутрициологом и готовится шеф-поваром из свежих 
+                        фермерских продуктов. Мы используем только натуральные ингредиенты без 
+                        консервантов, красителей и усилителей вкуса.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-primary text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">Свежие продукты</p>
+                                <p class="text-sm text-gray-600">Ежедневная доставка с ферм</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-primary text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">Без консервантов</p>
+                                <p class="text-sm text-gray-600">100% натуральный состав</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-primary text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">Индивидуальный подход</p>
+                                <p class="text-sm text-gray-600">Рационы под ваши цели</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-primary text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-gray-900">Доставка 7 дней</p>
+                                <p class="text-sm text-gray-600">В удобное для вас время</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- История создания -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">История создания</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Как мы пришли к идее создать сервис здорового питания
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                1
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">2019 год</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Основатель компании столкнулся с проблемой: нехватка времени на здоровое питание 
+                            при активном образе жизни. Так родилась идея создать сервис готовых рационов.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                2
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">2020 год</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Собрали команду профессионалов: шеф-повара, нутрициолога, технологов. 
+                            Разработали первое меню из 20 блюд. Запустили пилотный проект для друзей.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                3
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">2021 год</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Официальный запуск HealthyFood. Первые 100 клиентов за месяц. 
+                            Расширили меню до 50 блюд. Открыли собственную кухню-производство.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                                4
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">2025 год</h3>
+                        </div>
+                        <p class="text-gray-600 leading-relaxed">
+                            Сегодня у нас 5000+ постоянных клиентов, 100+ блюд в меню, собственные фермы 
+                            и доставка по всему городу. Мы продолжаем расти и делать ЗОЖ доступнее!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order" class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">Начните правильно питаться уже сегодня!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Закажите пробный день и получите скидку 20% на первую неделю
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="healthy-contacts.html" class="bg-white text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition shadow-xl">
+                    Заказать сейчас
+                </a>
+                <a href="healthy-faq.html" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white hover:text-primary transition">
+                    Узнать подробнее
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="healthy-assets/icons/logo.svg" alt="HealthyFood" class="h-10 w-10">
+                        <span class="text-2xl font-bold">HealthyFood</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Здоровое питание с доставкой на каждый день
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition">
+                            <i class="fab fa-vk text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition">
+                            <i class="fab fa-telegram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Компания</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#team" class="hover:text-primary transition">О нас</a></li>
+                        <li><a href="#about" class="hover:text-primary transition">Команда</a></li>
+                        <li><a href="healthy-contacts.html" class="hover:text-primary transition">Контакты</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Вакансии</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Поддержка</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="healthy-faq.html" class="hover:text-primary transition">FAQ</a></li>
+                        <li><a href="healthy-contacts.html" class="hover:text-primary transition">Связаться</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Доставка</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Оплата</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (495) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@healthyfood.ru</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Москва, Россия</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 HealthyFood. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Скрипты -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
